@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio | Marcos García Carrasco</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    // Habilita modo dark con clase
+    tailwind.config = {
+      darkMode: 'class'
+    };
+  </script>
+</head>
+<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-white transition-colors duration-300">
+
+  <div class="min-h-screen flex flex-col items-center justify-center p-8">
+    <button id="modoBtn" class="mb-8 px-4 py-2 bg-gray-200 dark:bg-gray-800 rounded shadow">
+      Cambiar a modo oscuro
+    </button>
+
+    <div class="text-center">
+      <h1 class="text-4xl font-bold mb-2">Marcos García Carrasco</h1>
+      <p class="text-lg text-gray-600 dark:text-gray-300">Desarrollador Frontend & Creativo Digital</p>
+      <p class="mt-4 max-w-xl mx-auto">Construyo experiencias digitales limpias, accesibles y modernas. Este portafolio incluye proyectos de marketing, análisis de datos y desarrollo web.</p>
+    </div>
+  </div>
+
+  <script src="toggle.js"></script>
+</body>
+</html>
